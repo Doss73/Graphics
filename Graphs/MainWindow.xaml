@@ -1,0 +1,16 @@
+﻿<Window x:Class="Graphs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Graphs"
+        mc:Ignorable="d"
+        Title="MainWindow" Name ="window"  Height="450" Width="658" Loaded="Window_Loaded_1">
+    <Grid Background="LightGreen" Margin="0,0,2,0" Name="grid">
+        <Canvas Name="canGraph" Background="White"
+            MouseMove="canGraph_MouseMove"
+            Width="529" Height="285"
+            VerticalAlignment="Center" MouseLeftButtonDown="CanGraph_MouseLeftButtonDown" MouseLeftButtonUp="CanGraph_MouseLeftButtonUp" Margin="59,0,60,129" HorizontalAlignment="Center" ClipToBounds="True"/>
+        <Button Content="Аппроксимировать" HorizontalAlignment="Left" Height="52" Margin="59,290,0,0" VerticalAlignment="Top" Width="529" FontSize="18" Click="Button_Click"/>
+    </Grid>
+</Window>
